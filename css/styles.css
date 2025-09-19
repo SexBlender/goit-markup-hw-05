@@ -429,10 +429,6 @@ box-shadow:  1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
   top: 0;
   left: 0;
   background-color: #4d5ae5;
-  /* padding-left: 22px;
-  padding-right: 42px;
-  padding-top: 40px;
-  padding-bottom: 164px; */
   padding: 40px 32px;
   height: 100%;
   transform: translateY(100%);
@@ -468,7 +464,7 @@ box-shadow:  1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
 }
 
 .footer-logo {
-  display: inline-block; /* окремо, щоб система точно знайшла */
+  display: inline-block; 
 }
 
 .footer-logo {
@@ -497,7 +493,6 @@ box-shadow:  1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
 
 .footer-container {
   display: flex;
-  /* align-items: flex-start; */
   align-items: baseline;
 }
 
@@ -506,12 +501,8 @@ box-shadow:  1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
   align-items: baseline;
 }
 
-/* .footer-contacts {
-  position: absolute;
-  left: 540px;
-  top: 0;
-  width: calc(100% - 540px - 804px);
-} */
+.footer-contacts {}
+
 
 .footer-contacts-title {
   color: #FFFFFF;
@@ -559,4 +550,61 @@ box-shadow:  1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
   position: absolute;
   bottom: 132px;
   left: 540px;
+}
+
+/* MODAL */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(46, 47, 66, 0.4);
+}
+
+.modal {
+  width: 408px;
+  min-height: 584px;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fcfcfc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  padding-top: 72px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+}
+
+.modal-title {
+  font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+text-align: center;
+color: #2e2f42;
+margin-bottom: 16px;
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #4d5ae5;
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 16px;
+  padding-right: 16px;
 }
