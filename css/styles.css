@@ -608,3 +608,12 @@ margin-bottom: 16px;
   padding-left: 16px;
   padding-right: 16px;
 }
+
+.modal-input-label {
+  display: inline-block;
+  font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: #8e8f99;
+margin-bottom: 4px;
+}
