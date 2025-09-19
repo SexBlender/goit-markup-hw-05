@@ -467,23 +467,44 @@
     </footer>
     <div class="backdrop">
       <div class="modal">
-        <bottom type="bottom" class="modal-close">X</bottom>
+        <bottom type="bottom" class="modal-close"
+          ><svg class="svg-close" width="12" height="12">
+            <use href="/images/icons.svg#icon-modal-close"></use></svg
+        ></bottom>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="modal-field">
             <label for="user-name" class="modal-input-label">Name</label>
-            <input type="text" class="modal-input" name:"user-name"
-            id="user-name" />
+            <input
+              type="text"
+              class="modal-input"
+              name="user-name"
+              id="user-name" />
+            <svg class="svg-input" width="12" height="12">
+              <use href="/images/icons.svg#icon-user"></use>
+            </svg>
           </div>
-          <div>
+          <div class="modal-field">
             <label for="user-tel" class="modal-input-label">Phone</label>
-            <input type="tel" class="modal-input" name:"user-tel" id="user-tel"
-            />
+            <input
+              type="tel"
+              class="modal-input"
+              name="user-tel"
+              id="user-tel" />
+            <svg class="svg-input" width="12" height="12">
+              <use href="/images/icons.svg#icon-userphone"></use>
+            </svg>
           </div>
-          <div>
+          <div class="modal-field">
             <label for="user-email" class="modal-input-label">Email</label>
-            <input type="email" class="modal-input" name:"user-email"
-            id="user-email" />
+            <input
+              type="email"
+              class="modal-input"
+              name="user-email"
+              id="user-email" />
+            <svg class="svg-input" width="12" height="12">
+              <use href="/images/icons.svg#icon-useremail"></use>
+            </svg>
           </div>
           <button type="submit">Send</button>
         </form>
