@@ -560,6 +560,12 @@ button {
 }
 
 .footer-input-wrapper {
+  flex: 1;
+}
+
+.footer-modal-form {
+  display: flex;
+  align-items: flex-start;
 }
 
 .footer-modal-text {
@@ -601,6 +607,7 @@ button {
 }
 
 .btn-submit-container {
+  margin-left: 24px;
 }
 
 .footer-input-wrapper {
@@ -631,8 +638,7 @@ button {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-btn-submit,
-.footer-btn-submit {
+.footer-btn-submit:hover {
   background-color: #404bbf;
 }
 
