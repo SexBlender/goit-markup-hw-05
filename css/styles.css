@@ -592,17 +592,23 @@ button {
   justify-content: center;
   border-radius: 100%;
   cursor: pointer;
-  fill: #e7e9fc;
+  color: #2e2f42;
   stroke-width: 1px;
   stroke: rgba(0, 0, 0, 0.1);
   background-color: transparent;
-  transition-property: background-color, fill;
+  transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close:hover {
-  background-color: #ddd;
+  background-color: #404bbf;
+  color: #e7e9fc;
+}
+
+.modal-close:hover .svg-close {
+  fill: #fff;
+  stroke: #fff;
 }
 
 .modal-title {
@@ -692,4 +698,42 @@ button {
 
 .modal-textarea:focus {
   border-color: #4d5ae5;
+}
+
+.modal-check:checked + .modal-check-label > .modal-check-box {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
+.modal-check-label {
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: flex;
+  align-items: center;
+}
+
+.modal-check-link {
+  line-height: 1.33;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
+
+.modal-check-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  margin-right: 8px;
+  background-color: transparent;
+  fill: transparent;
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
