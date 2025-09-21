@@ -458,9 +458,6 @@ button {
   background-color: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
-  max-width: 1440px;
-  margin: 0 auto;
-  position: relative;
 }
 
 .footer-logo {
@@ -547,16 +544,10 @@ button {
 }
 
 .footer-social-media {
-  position: absolute;
-  top: 100px;
-  left: 540px;
 }
 
 .footer-modal {
   margin-left: auto;
-  position: absolute;
-  top: 100px;
-  left: calc(540px + 208px + 80px);
 }
 
 .footer-input-wrapper {
