@@ -687,31 +687,39 @@ button {
 
 .modal-close {
   position: absolute;
+  padding: 0;
   top: 24px;
   right: 24px;
   width: 24px;
   height: 24px;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 100%;
+  border-radius: 50%;
   cursor: pointer;
   color: #2e2f42;
   stroke-width: 1px;
   stroke: rgba(0, 0, 0, 0.1);
   background-color: #e7e9fc;
-  transition-property: background-color, color;
+  transition-property: background-color, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close:hover {
+.modal-close:hover,
+.modal-close:focus {
   background-color: #404bbf;
-  color: #e7e9fc;
+  border: none;
 }
 
-.modal-close:hover .svg-close {
+.svg-close {
+  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:hover .svg-close,
+.modal-close:focus .svg-close {
   fill: #fff;
   stroke: #fff;
 }
@@ -755,7 +763,7 @@ button {
 }
 
 .modal-input-label {
-  display: inline-block;
+  display: block;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -765,10 +773,6 @@ button {
 
 .modal-field {
   margin-bottom: 8px;
-}
-
-.svg-close {
-  fill: #2e2f42;
 }
 
 .svg-input {
@@ -795,13 +799,13 @@ button {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 8px;
+  padding: 8px 16px;
   outline: transparent;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  resize: none;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -811,8 +815,12 @@ button {
   color: rgba(46, 47, 66, 0.4);
 }
 
-.modal-textarea .modal-textarea:focus {
+.modal-textarea:focus {
   border-color: #4d5ae5;
+}
+
+.textarea-container {
+  margin-bottom: 16px;
 }
 
 .modal-check:checked + .modal-check-label > .modal-check-box {
@@ -823,11 +831,9 @@ button {
 
 .modal-check-label {
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  display: flex;
-  align-items: center;
 }
 
 .modal-check-link {
@@ -837,8 +843,12 @@ button {
   color: #4d5ae5;
 }
 
+.modal-check-wrapper {
+  margin-bottom: 24px;
+}
+
 .modal-check-box {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 16px;
@@ -848,9 +858,9 @@ button {
   margin-right: 8px;
   background-color: transparent;
   fill: transparent;
-  transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-submit-footer {
