@@ -606,10 +606,6 @@ button {
   border-color: #31d0aa;
 }
 
-.btn-submit-container {
-  margin-left: 24px;
-}
-
 .footer-btn-submit {
   font-family: inherit;
   font-weight: 500;
@@ -620,6 +616,7 @@ button {
   background-color: #4d5ae5;
   display: block;
   margin: 0 auto;
+  margin-left: 24px;
   min-width: 165px;
   min-height: 40px;
   border-radius: 4px;
